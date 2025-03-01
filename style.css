@@ -1,0 +1,23 @@
+body{
+    background: blue;
+}
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
