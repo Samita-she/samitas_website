@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: lightgray;
+    background-color:lightslategray
     transition: background-color 0.5s ease;
 }
 h1 {
