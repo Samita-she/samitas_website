@@ -1,35 +1,108 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
     text-align: center;
-    background-color:lightslategray
-    transition: background-color 0.5s ease;
+    padding: 20px;
+    background: #222;
+    color: #fff;
 }
-h1 {
-    color: darkblue;
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
 }
+
 button {
-    padding: 10px 15px;
-    border: none;
-    background-color: navy;
+    background: #008cba;
     color: white;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 5px;
 }
+
 button:hover {
-    background-color: darkred;
+    background: #005f73;
 }
-.contact-info {
+
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
     text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
+    padding-top: 20%;
+    font-size: 2rem;
+}
+.profile-pic {
+    width: 25vw;
+    height: 25vw;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto 0;
+    border: 5px solid white;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-.contact-info a {
+.contact-links a,
+.contact-links button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    transition: background 0.3s;
+    font-size: 16px;
 }
 
-.contact-info a:hover {
-    color: #ff6600;
+.contact-links a:hover,
+.contact-links button:hover {
+    background: #008cba;
+}
+
+.contact-links img {
+    width: 22px;
+    height: 22px;
+}
+
+.contact-links button {
+    border: none;
+    cursor: pointer;
 }

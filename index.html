@@ -2,31 +2,59 @@
 <html lang="en">
 
 <head>
-   <link rel="stylesheet" href="style.css"/>
-   <title>samitas_Website</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sheila Khanyunya Samita - Portfolio</title>
+   <link rel="stylesheet" href="style.css?v=3">
+
 
 </head>
 
 <body>
- <header></header>
-  <h1>Welcome to my first website!</h1>
-    <p>I decided to put to practice the knowledge I have in programming by creating this simple website.</p>
-    <P>I hope you like it!</P>
-    <button id="changeColorBtn">Change Background</button>
- </header>
- <div>
-    <h2>About me</h2>
-     <P>Hello! I'm Samita,I just started learning programming.</P>
- </div>
-<div class="contact-info">
-    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:samitasheila1@gmail.com">samitasheila1@gmail.com</a></p>
-    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+254790877532">0790 877 532</a></p>
-    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Samita-she"
-            target="_blank">github.com/Samita-she</a></p>
-</div>
+   <header>
+      <video autoplay loop muted playsinline id="background-video">
+         <source src="https://v1.pinimg.com/videos/mc/720p/81/40/45/8140458e99725dff66797ff40426070b.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+      
+      <div class="header-content">
+         <img src="./Shee.jpeg" alt="Sheila Khanyunya Samita" class="profile-pic">
+      </div>
 
- <script src="script.js"></script>
+      <div class="content">
+         <h1>Welcome to My Portfolio</h1>
+      </div>
+
+      <h1>Sheila Khanyunya Samita</h1>
+      <p>Accountant | Aspiring Software Engineer</p>
+      <button id="dark-mode-toggle">Toggle Dark Mode</button>
+   </header>
+
+   <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I’m Sheila Khanyunya Samita—an accountant passionate about coding, technology, and problem-solving. A commerce
+      graduate from Jomo Kenyatta University of Agriculture and Technology, I’m currently pursuing software engineering at
+      Moringa. I aspire to integrate tech and finance to create innovative solutions. Enthusiastic and cheerful, I embrace
+      challenges with curiosity and creativity.Let’s connect and transform ideas into impactful digital experiences!</p>
+   </section>
+   <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-links">
+         <a href="https://www.linkedin.com/in/sheila-samita-676362241" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+         </a>
+         <a href="https://github.com/Samita-she" target="_blank">
+            <img src="github-icon.png" alt="GitHub"> GitHub
+         </a>
+         <input type="text" id="email-text" value="samitasheila1@gmail.com" readonly style="position: absolute; left: -9999px;">
+         <button id="copy-email">
+            <i class="fas fa-envelope"></i> Copy Email
+         </button>
+         
+      </div>
+   </section>
+
+   <script src="script.js"></script>
 </body>
 
 </html>
